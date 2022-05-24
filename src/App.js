@@ -7,7 +7,7 @@ const App = () => {
   const [searchField, setSearchField] = useState(''); //[value, setValue]
   const [monsters, setMonsters] = useState([]);
   const [filteredMonsters, setFilterMonsters] = useState(monsters);
-
+   
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
